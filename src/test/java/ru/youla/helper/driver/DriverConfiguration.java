@@ -13,12 +13,12 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 @Slf4j
-public class DriverFactory {
-    WebDriver driver;
+public class DriverConfiguration {
+    private static RemoteWebDriver driver;
 
-    public WebDriver createChromeDriver() {
+    public static WebDriver createChromeDriver() {
         ChromeOptions options = new ChromeOptions();
-        options.setHeadless(true);
+        options.setHeadless(false);
         options.addArguments("--no-sandbox", "--disable-dev-shm-usage");
         if (System.getenv("CI_JOB_ID") != null) {
             try {
@@ -35,12 +35,13 @@ public class DriverFactory {
             WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver(options);
         }
-        log.info("Init driver - {}", this.driver);
-        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+        log.info("Init driver - {}", driver);
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         return driver;
     }
 
-    public WebDriver createFirefoxDriver() {
+    public static WebDriver createFirefoxDriver() {
         FirefoxOptions options = new FirefoxOptions();
         options.setHeadless(true);
         if (System.getenv("CI_JOB_ID") != null) {
@@ -59,8 +60,9 @@ public class DriverFactory {
             WebDriverManager.firefoxdriver().setup();
             driver = new FirefoxDriver(options);
         }
-        log.info("Init driver - {}", this.driver);
-        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+        log.info("Init driver - {}", driver);
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         return driver;
     }
 }
