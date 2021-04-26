@@ -1,0 +1,58 @@
+image: gradle:6.8.3-jdk11
+
+stages:
+  - test
+  - reports
+  - deploy
+
+test:
+  stage: test
+  allow_failure: true
+  tags:
+    - docker
+  script:
+    - gradle clean test
+  variables:
+    selenium_remote_url: "http://selenium__standalone-chrome:4444/wd/hub/"
+  services:
+    - selenium/standalone-chrome:latest
+  artifacts:
+    when: always
+    paths:
+      - build/allure-results
+    expire_in: 1 day
+    reports:
+      junit: build/test-results/test/**/TEST-*.xml
+
+allure:
+  stage: reports
+  when: always
+  tags:
+    - docker
+  image: frankescobar/allure-docker-service
+  dependencies:
+    - test
+  script:
+    - allure generate -c build/allure-results -o build/reports/allure-report
+  artifacts:
+    when: always
+    paths:
+      - build/allure-results
+      - build/reports/allure-report
+  only:
+    - master
+
+pages:
+  stage: deploy
+  when: on_success
+  dependencies:
+    - allure
+  script:
+    - mkdir public
+    - mv build/reports/allure-report/ public/
+  artifacts:
+    paths:
+      - public
+    expire_in: 7 days
+  only:
+    - master
