@@ -18,7 +18,7 @@ public class DriverConfiguration {
 
     public static WebDriver createChromeDriver() {
         ChromeOptions options = new ChromeOptions();
-        options.setHeadless(false);
+        options.setHeadless(true);
         options.addArguments("--no-sandbox", "--disable-dev-shm-usage");
         if (System.getenv("CI_JOB_ID") != null) {
             try {
