@@ -1,0 +1,10 @@
+[ {
+  "name" : "GitHub Actions",
+  "type" : "github",
+  "url" : "https://pshakhov.github.io/youla-test-task",
+  "buildOrder" : 16,
+  "buildName" : "GitHub Actions Run #1174137429",
+  "buildUrl" : "https://github.com/pshakhov/youla-test-task/actions/runs/1174137429",
+  "reportName" : "Allure Report with history",
+  "reportUrl" : "https://pshakhov.github.io/youla-test-task/16/"
+} ]

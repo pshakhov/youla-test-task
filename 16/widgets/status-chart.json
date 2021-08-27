@@ -1,0 +1,21 @@
+[ {
+  "uid" : "a21eb88fec4cd186",
+  "name" : "Загрузка изображения и проверка результатов выдачи",
+  "time" : {
+    "start" : 1630065802895,
+    "stop" : 1630065819090,
+    "duration" : 16195
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fe6560ea9a3a6eef",
+  "name" : "Загрузка изображения и проверка результатов выдачи",
+  "time" : {
+    "start" : 1630065802647,
+    "stop" : 1630065819229,
+    "duration" : 16582
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

@@ -1,0 +1,39 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "children" : [ {
+    "name" : "Загрузка изображения и проверка результатов выдачи",
+    "uid" : "fe6560ea9a3a6eef",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1630065802647,
+      "stop" : 1630065819229,
+      "duration" : 16582
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Поиск по картинке",
+    "children" : [ {
+      "name" : "Загрузка изображения и проверка результатов выдачи",
+      "children" : [ {
+        "name" : "Загрузка изображения и проверка результатов выдачи",
+        "uid" : "a21eb88fec4cd186",
+        "parentUid" : "6de607758c3fe388211989b4f8dc85ed",
+        "status" : "passed",
+        "time" : {
+          "start" : 1630065802895,
+          "stop" : 1630065819090,
+          "duration" : 16195
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "truckcrane.jpg", "автокран" ]
+      } ],
+      "uid" : "6de607758c3fe388211989b4f8dc85ed"
+    } ],
+    "uid" : "def709004e90b974825dfc2e3d95fc77"
+  } ],
+  "name" : "behaviors"
+}
