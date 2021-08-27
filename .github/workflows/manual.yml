@@ -37,19 +37,7 @@ jobs:
       - name: Test with Gradle
         run: ./gradlew clean test
 
-      - name: Upload Allure artifacts
-        uses: actions/upload-artifact@v2
-        with:
-          name: allure-results
-          path: build/allure-results
-
-      - name: Generate Allure report
-        run: allure generate -c build/allure-results -o build/reports/allure-report
-
-      - name: Upload Allure report
-        uses: actions/upload-artifact@v2
-        with:
-          name: allure-report
-          path: build/reports/allure-report
+      - name: Allure Report with history
+        uses: simple-elf/allure-report-action@v1.5
 
 
