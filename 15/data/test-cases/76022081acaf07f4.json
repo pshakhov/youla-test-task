@@ -1,0 +1,44 @@
+{
+  "uid" : "76022081acaf07f4",
+  "name" : "Загрузка изображения и проверка результатов выдачи",
+  "historyId" : "d064b50003f9aaf0fbee92280ed886e1",
+  "time" : {
+    "start" : 1630064488899,
+    "stop" : 1630064507688,
+    "duration" : 18789
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "fv-az47-737"
+  }, {
+    "name" : "thread",
+    "value" : "4556@fv-az47-737.Test worker(11)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "76022081acaf07f4.json",
+  "parameterValues" : [ ]
+}

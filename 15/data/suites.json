@@ -1,0 +1,35 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "Загрузка изображения и проверка результатов выдачи",
+    "uid" : "76022081acaf07f4",
+    "parentUid" : "98d3104e051c652961429bf95fa0b5d6",
+    "status" : "passed",
+    "time" : {
+      "start" : 1630064488899,
+      "stop" : 1630064507688,
+      "duration" : 18789
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Поиск по картинке",
+    "children" : [ {
+      "name" : "Загрузка изображения и проверка результатов выдачи",
+      "uid" : "70fa031a26ec004a",
+      "parentUid" : "f0b958c14467ad9e834c54d12ec4926c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630064489187,
+        "stop" : 1630064507545,
+        "duration" : 18358
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "truckcrane.jpg", "автокран" ]
+    } ],
+    "uid" : "f0b958c14467ad9e834c54d12ec4926c"
+  } ],
+  "name" : "suites"
+}

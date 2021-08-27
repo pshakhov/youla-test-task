@@ -1,0 +1,201 @@
+{
+  "uid" : "70fa031a26ec004a",
+  "name" : "Загрузка изображения и проверка результатов выдачи",
+  "fullName" : "Поиск по картинке: Загрузка изображения и проверка результатов выдачи",
+  "historyId" : "be3749d15817c6349c49bd75156a819b",
+  "time" : {
+    "start" : 1630064489187,
+    "stop" : 1630064507545,
+    "duration" : 18358
+  },
+  "description" : "  Поиск по картинке среди результатов должен выдать текстовое описание того, что на ней изображено",
+  "descriptionHtml" : "<p>Поиск по картинке среди результатов должен выдать текстовое описание того, что на ней изображено</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "  Поиск по картинке среди результатов должен выдать текстовое описание того, что на ней изображено",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Дано  Открыть главную Яндекса",
+      "time" : {
+        "start" : 1630064489194,
+        "stop" : 1630064499939,
+        "duration" : 10745
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "И  Перейти в блок Картинки",
+      "time" : {
+        "start" : 1630064499991,
+        "stop" : 1630064500386,
+        "duration" : 395
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "И  Нажать на поиск по картинке",
+      "time" : {
+        "start" : 1630064500387,
+        "stop" : 1630064501867,
+        "duration" : 1480
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Когда  Загрузить картинку с предусловия \"truckcrane.jpg\"",
+      "time" : {
+        "start" : 1630064501868,
+        "stop" : 1630064502027,
+        "duration" : 159
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Тогда  Убедиться, что в блоке Кажется, на картинке есть в одном из буллитов отобразилось слово \"автокран\"",
+      "time" : {
+        "start" : 1630064502027,
+        "stop" : 1630064507454,
+        "duration" : 5427
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "assertThat 'автокран галичанин 32 тонны'",
+        "time" : {
+          "start" : 1630064507451,
+          "stop" : 1630064507451,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "contains '[автокран]'",
+        "time" : {
+          "start" : 1630064507452,
+          "stop" : 1630064507453,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 7,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "ru.youla.steps.MyStepdefs.tearDown(io.cucumber.java.Scenario)",
+    "time" : {
+      "start" : 1630064507466,
+      "stop" : 1630064507544,
+      "duration" : 78
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "fv-az47-737"
+  }, {
+    "name" : "thread",
+    "value" : "4556@fv-az47-737.Test worker(11)"
+  }, {
+    "name" : "feature",
+    "value" : "Поиск по картинке"
+  }, {
+    "name" : "story",
+    "value" : "Загрузка изображения и проверка результатов выдачи"
+  }, {
+    "name" : "suite",
+    "value" : "Поиск по картинке"
+  }, {
+    "name" : "testClass",
+    "value" : "Загрузка изображения и проверка результатов выдачи"
+  }, {
+    "name" : "framework",
+    "value" : "cucumber4jvm"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "gherkin_uri",
+    "value" : "file:///home/runner/work/youla-test-task/youla-test-task/src/test/resources/features/SearchByImage.feature"
+  }, {
+    "name" : "package",
+    "value" : "src.test.resources.features.SearchByImage_feature.Поиск по картинке"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "image",
+    "value" : "truckcrane.jpg"
+  }, {
+    "name" : "text",
+    "value" : "автокран"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "70fa031a26ec004a.json",
+  "parameterValues" : [ "truckcrane.jpg", "автокран" ]
+}
