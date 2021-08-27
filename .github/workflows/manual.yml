@@ -1,6 +1,6 @@
 # This is a basic workflow that is manually triggered
 
-name: Manual workflow Java CI with Gradle
+name: Allure Reports with history
 
 # Controls when the action will run. Workflow runs when manually triggered using the UI
 # or API.
@@ -36,6 +36,7 @@ jobs:
 
       - name: Test with Gradle
         run: ./gradlew clean test
+        continue-on-error: true
 
       - name: Get Allure history
         uses: actions/checkout@v2
@@ -54,7 +55,7 @@ jobs:
           #gh_pages: gh-pages
           #allure_report: allure-report
           allure_history: allure-history
-          keep_reports: 20
+          keep_reports: 5
 
       - name: Deploy report to Github Pages
         if: always()
@@ -72,6 +73,6 @@ jobs:
           context: 'Test report'
           state: 'success'
           sha: ${{ github.event.pull_request.head.sha }}
-          target_url: pshakhov.github.io/github-allure-history/${{ github.run_number }}
+          target_url: pshakhov.github.io/youla-test-task/${{ github.run_number }}
 
 
