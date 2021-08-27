@@ -61,7 +61,7 @@ public class MyStepdefs {
     public void загрузитьКартинкуСПредусловия(String image) {
         String testResourcesBase = "src/test/resources/";
         File file = new File(testResourcesBase + image);
-        WebElement uploadButton = driver.findElement(By.cssSelector(".cbir-panel__file-input"));
+        WebElement uploadButton = driver.findElement(By.xpath(".//*[@class=\"CbirCore-FileInput\"]"));
 
         uploadButton.sendKeys(file.getAbsolutePath());
     }
