@@ -17,7 +17,7 @@ dependencies {
     testImplementation 'io.cucumber:cucumber-junit:7.0.0'
 
     testImplementation 'io.qameta.allure:allure-junit5:2.15.0'
-    testImplementation 'io.qameta.allure:allure-cucumber6-jvm:2.15.0'
+    testImplementation 'io.qameta.allure:allure-cucumber6-jvm:2.29.1'
     testImplementation 'io.qameta.allure:allure-java-commons:2.15.0'
     testImplementation 'io.qameta.allure:allure-assertj:2.15.0'
 
