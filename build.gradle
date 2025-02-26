@@ -35,13 +35,6 @@ dependencies {
     testCompileOnly 'org.projectlombok:lombok:1.18.36'
 }
 
-allure {
-    autoconfigure = true
-    version = '2.13.9'
-    aspectjVersion = true
-    aspectjVersion = "1.9.6"
-}
-
 tasks {
     test {
         testLogging {
