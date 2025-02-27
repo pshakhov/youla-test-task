@@ -37,7 +37,7 @@ jobs:
         distribution: 'adopt'
         
     - name: Build with Gradle
-      uses: gradle/gradle-build-action@v2
+      uses: gradle/gradle-build-action@v3
       with:
         gradle-version: '7.6.4'
         arguments: 'clean test'
