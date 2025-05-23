@@ -23,7 +23,7 @@ dependencies {
 
     implementation 'org.apache.maven.plugins:maven-surefire-plugin:3.5.2'
 
-    testImplementation 'org.seleniumhq.selenium:selenium-java:4.29.0'
+    testImplementation 'org.seleniumhq.selenium:selenium-java:4.33.0'
     testImplementation 'org.assertj:assertj-core:3.27.3'
     testImplementation 'io.github.bonigarcia:webdrivermanager:5.9.3'
     testImplementation 'io.github.bonigarcia:selenium-jupiter:4.3.7'
