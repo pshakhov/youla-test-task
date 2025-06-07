@@ -14,7 +14,7 @@ dependencies {
     testImplementation 'org.junit.vintage:junit-vintage-engine:5.13.0'
 
     testImplementation 'io.cucumber:cucumber-java:7.21.1'
-    testImplementation 'io.cucumber:cucumber-junit:7.21.1'
+    testImplementation 'io.cucumber:cucumber-junit:7.23.0'
 
     testImplementation 'io.qameta.allure:allure-junit5:2.29.1'
     testImplementation 'io.qameta.allure:allure-cucumber6-jvm:2.29.1'
